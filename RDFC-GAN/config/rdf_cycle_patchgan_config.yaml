@@ -1,0 +1,44 @@
+model:
+  type: RDFCGAN
+  G_A2B:
+    type: RDFGenerator
+    encoder_rgb: resnet18
+    encoder_depth: resnet18
+    pretrained_on_imagenet: True
+    semantic_channels_in: 3
+    fuse_depth_in_rgb_decoder: WAdaIN
+    bn: True
+    rgb_skip_connection_type: concat
+    depth_skip_connection_type: concat
+    adain_weighting: False
+    rgb_channels_encoder: [64, 64, 128, 256, 512, 512]
+    depth_channels_encoder: [64, 64, 128, 256, 512, 512]
+    rgb_channels_decoder: [256, 128, 64, 64]
+    depth_channels_decoder: [256, 128, 64, 64]
+
+
+  G_B2A:
+    type: ResnetGenerator
+    input_channels: 1
+    output_channels: 3
+    ngf: 64
+    norm_layer: IN2d
+
+  Normal_G:
+    sampling_ratio: 0.4
+    importance_ratio: 0.7
+    architecture: BN
+
+  D_A: 
+    type: PatchGANDiscriminator
+    in_channels: 1
+    norm_cfg:
+      type: BN2d
+    activation: LeakyReLU
+
+  D_B:
+    type: PatchGANDiscriminator
+    in_channels: 3
+    norm_cfg:
+      type: BN2d
+    activation: LeakyReLU

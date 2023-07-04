@@ -1,0 +1,10 @@
+matplotlib
+future
+tensorboard
+opencv-python
+numba
+h5py
+scikit-image
+pyyaml
+attrdict
+open3d

@@ -1,0 +1,14 @@
+/data
+/work_dir
+/pretrained_model
+/results
+/checkpoints
+
+
+*__pycache__
+*.log
+
+*build*
+*egg-info
+*dist*
+
