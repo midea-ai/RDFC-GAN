@@ -1,13 +1,14 @@
 ## RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion
 
-This repository provides the code for our paper, **RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion** and its previous version **RGB-Depth Fusion GAN for Indoor Depth Completion** (RDF-GAN) in CVPR 2022.
+This repository provides the code for our paper, **RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion** in TPAMI and its previous version **RGB-Depth Fusion GAN for Indoor Depth Completion** (RDF-GAN) in CVPR 2022.
 
 ----
 RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion 
-[[arXiv]](http://arxiv.org/abs/2306.03584) 
+[[arXiv]](https://arxiv.org/abs/2306.03584) [[IEEE DL]](https://ieeexplore.ieee.org/document/10497905)
 
-**Authors**: Haowen Wang\*, Zhengping Che\*, Mingyuan Wang, Zhiyuan Xu, Xiuquan Qiao, Mengshi Qi, Feifei Feng, and Jian Tang  _(\*equal contributions)_
+_IEEE Transactions on Pattern Analysis and Machine Intelligence 2024_
 
+**Authors**: Haowen Wang\*, Zhengping Che\*, Yufan Yang, Mingyuan Wang, Zhiyuan Xu, Xiuquan Qiao, Mengshi Qi, Feifei Feng, and Jian Tang  _(\*equal contributions)_
 
 ----
 RGB-Depth Fusion GAN for Indoor Depth Completion
@@ -28,14 +29,16 @@ If you find our work helpful in your research, please consider citing:
 
 - RDFC-GAN
 ```
-@misc{wang2023rdfcgan,
-      title={RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion}, 
-      author={Haowen Wang and Zhengping Che and Mingyuan Wang and Zhiyuan Xu and Xiuquan Qiao and Mengshi Qi and Feifei Feng and Jian Tang},
-      year={2023},
-      eprint={2306.03584},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{refcgan10497905,
+  author={Wang, Haowen and Che, Zhengping and Yang, Yufan and Wang, Mingyuan and Xu, Zhiyuan and Qiao, Xiuquan and Qi, Mengshi and Feng, Feifei and Tang, Jian},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={RDFC-GAN: RGB-Depth Fusion CycleGAN for Indoor Depth Completion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-14},
+  keywords={Depth completion;Generative adversarial network;RGB-depth fusion;Indoor environment},
+  doi={10.1109/TPAMI.2024.3388004}}
 ```
 - RDF-GAN
 ```
